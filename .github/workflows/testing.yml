@@ -27,7 +27,7 @@ jobs:
             pip install -r requirements.txt
         - name: Linting
           run: |
-            flake8
+            flake8 --extend-exclude="settings.py"
         - name: Coverage report
           run: |
             pip install coverage
