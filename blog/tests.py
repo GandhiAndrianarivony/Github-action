@@ -8,7 +8,7 @@ class BlogModelTest(TestCase):
 
     def setUp(self):
         self.blog = Post.objects.create(
-            title="django", author="John", slug="django"
+            title="django", author="John Wayne", slug="django"
         )
 
     def test_post_model(self):
