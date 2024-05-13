@@ -7,7 +7,9 @@ class BlogModelTest(TestCase):
     """Test Blog Model"""
 
     def setUp(self):
-        self.blog = Post.objects.create(title="django", author="John Wayne", slug="django")
+        self.blog = Post.objects.create(
+            title="django", author="John Wayne", slug="django"
+        )
 
     def test_post_model(self):
         self.assertTrue(isinstance(self.blog, Post))
